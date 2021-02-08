@@ -1,3 +1,41 @@
+/* -------------------------------- img_logo ------------------------------ */
+
+.logo {
+  display: flex;
+  width: 200px;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.size {
+  width: 100%;
+  margin-bottom: 4%;
+  padding-top: 4%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* -------------------------------- img_album ------------------------------ */
+
+.img_album {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  max-width: 95%;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+.container {
+  position: relative;
+}
+
+
+/* -------------------------------- Dropdown ------------------------------- */
 /*
 .dropbtn {
   background-color: #4CAF50;
@@ -29,11 +67,12 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-
+/* -------------------------------- Slider --------------------------------- */
 
 .slide{
-  height: 720 px;
-  width: 1280 px;
+  height: 80%;
+  width: auto;
+  opacity: 0.8;
 }
 
 * {box-sizing: border-box}
@@ -83,7 +122,7 @@ img {vertical-align: middle;}
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 45%;
+  top: 50%;
   width: 100%;
   text-align: center;
   }
