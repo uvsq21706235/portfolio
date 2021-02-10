@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="author" content="Camille">
+      <meta charset="utf-8" />
+        <!-- titre de la page -->
+      <title>Accueil</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+      <link rel="stylesheet" href="css/mystyles.css">
+      <link rel="stylesheet" href="slider.css">
+
+
+      <style>
+        body{
+          background-color: #fdfcf6
+        }
+     </style>
+
+    </head>
+
+    <body>
+
+      <!-- barre de navigation-->
+      <div class="size">
+        <div>
+          <nav class="navbar_background_color" role="navigation" aria-label="main navigation">
+            <div class="navbar-menu">
+              <a class="navbar-item" href="index.html">
+                Accueil
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-item" href="albums.html">
+                  Albums
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="#">
+                    Automne Bohème
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Diner en ville
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Couleurs d'Afrique
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Salomé Gautard
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      <div>
+          <a href="index.html"><img src="../images/logo.png" class="logo"></a>
+      </div>
+        <div>
+          <nav class="navbar_background_color" role="navigation" aria-label="main navigation">
+            <div class="navbar-menu">
+              <a class="navbar-item" href="portrait.html">
+                Portrait
+              </a>
+              <a class="navbar-item" href="contact.html">
+                Contact
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img class="slide" src="../images/fond.jpg" >
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="albums.html">
+    <img class="slide" src="../images/bella.jpg">
+    <div class="text">Caption Two</div>
+  </a>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+</div>
+
+
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+var timer = setInterval("plusSlides(1)", 5500);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    </body>
+</html>
