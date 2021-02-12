@@ -1,3 +1,20 @@
+.level {
+  width: 60%;
+  margin: auto;
+}
+
+.heading {
+  padding-top: 8%;
+}
+
+.lien {
+  color: grey;
+}
+
+.lien:hover {
+  color: black;
+}
+
 /* --------------------------------- contact -------------------------------- */
 
 .center{
@@ -34,7 +51,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3%;
-  max-width: 95%;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   opacity: 0.8;
@@ -44,43 +61,10 @@
   position: relative;
 }
 
-
-/* -------------------------------- Dropdown ------------------------------- */
-/*
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}*/
-
-.dropdown {
-/*  position: relative;*/
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fdfcf6;
-/*  min-width: 160px;*/
-/*  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 9px 14px;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
 /* -------------------------------- Slider --------------------------------- */
 
 .slide{
-  height: 80%;
+  height: 100%;
   width: auto;
   opacity: 0.8;
 }
@@ -127,12 +111,10 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
   color: black;
-  font-family: URW Chancery L, cursive;
 /*  font-size: larger;*/
   font-size: 30px;
-  padding: 8px 12px;
   position: absolute;
-  top: 50%;
+  bottom: 45%;
   width: 100%;
   text-align: center;
   }
