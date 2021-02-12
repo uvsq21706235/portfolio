@@ -78,13 +78,13 @@
 
 <div class="mySlides fade">
   <a href="albums.html">
-    <img class="slide" src="../images/bella.jpg">
+    <img class="slide" src="../images/salopette5.jpg">
     <div class="text">Caption Two</div>
   </a>
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<a class="prev" onclick="intervalPlusSlides(-1)">&#10094;</a>
+<a class="next" onclick="intervalPlusSlides(1)">&#10095;</a>
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
@@ -100,6 +100,12 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 var timer = setInterval("plusSlides(1)", 5500);
+
+function intervalPlusSlides(n) {
+  clearInterval(timer);
+  plusSlides(n);
+  timer = setInterval("plusSlides(1)", 5500);
+}
 
 function plusSlides(n) {
   showSlides(slideIndex += n);

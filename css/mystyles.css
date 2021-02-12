@@ -4064,7 +4064,7 @@ a.navbar-item,
   .navbar-link:hover,
   .navbar-link.is-active {
     background-color: #fafafa;
-    color: #3273dc; }
+    color: black; }
 
 .navbar-item {
   flex-grow: 0;
@@ -8314,7 +8314,7 @@ a.navbar-item,
   .navbar-link:hover,
   .navbar-link.is-active {
     background-color: #fafafa;
-    color: #3273dc; }
+    color: black; }
 
 .navbar-item {
   flex-grow: 0;
