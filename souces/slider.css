@@ -1,3 +1,8 @@
+.menu:hover {
+  color: black;
+}
+
+
 .level {
   width: 60%;
   margin: auto;
@@ -36,12 +41,14 @@
 }
 
 .size {
-  width: 100%;
-  margin-bottom: 4%;
-  padding-top: 4%;
+  width: 85%;
+  padding-bottom: 1%;
+  margin: auto;
+  padding-top: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid lightgrey;
 }
 
 /* -------------------------------- img_album ------------------------------ */
@@ -51,6 +58,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3%;
+  margin-top: 3%
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -59,6 +67,7 @@
 
 .container {
   position: relative;
+  margin-top: 3%;
 }
 
 /* -------------------------------- Slider --------------------------------- */
@@ -76,6 +85,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
+  padding-top: 4%;
   max-width: 1000px;
   position: relative;
   margin: auto;
