@@ -29,7 +29,14 @@
   margin: auto;
 }
 
-
+.img_portrait {
+  width: 20%;
+  margin: 3%;
+  margin-left: 8%;
+  margin-bottom: 1%;
+  float: left;
+  text-align: justify;
+}
 /* -------------------------------- img_logo -------------------------------- */
 
 .logo {
@@ -74,7 +81,7 @@
 
 .slide{
   height: 100%;
-  width: auto;
+  width: 100%;
   opacity: 0.8;
 }
 
@@ -86,7 +93,7 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   padding-top: 4%;
-  max-width: 1000px;
+  max-width: 75%;
   position: relative;
   margin: auto;
 }
