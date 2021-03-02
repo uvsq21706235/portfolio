@@ -1,3 +1,14 @@
+.shoot {
+  width: 80%;
+  padding-bottom: 1%;
+  margin: auto;
+  padding-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .menu:hover {
   color: black;
 }
@@ -82,7 +93,6 @@
 .slide{
   height: 100%;
   width: 100%;
-  opacity: 0.8;
 }
 
 * {box-sizing: border-box}

@@ -104,6 +104,8 @@
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 
 </div>
@@ -128,7 +130,9 @@ function plusSlides(n) {
 }
 
 function currentSlide(n) {
+  clearInterval(timer);
   showSlides(slideIndex = n);
+  timer = setInterval("plusSlides(1)", 5500);
 }
 
 function showSlides(n) {
