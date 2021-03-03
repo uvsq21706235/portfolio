@@ -1,10 +1,10 @@
 .shoot {
-  width: 80%;
+  width: 85%;
   padding-bottom: 1%;
   margin: auto;
   padding-top: 1%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
