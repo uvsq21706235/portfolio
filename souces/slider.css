@@ -47,6 +47,7 @@
   margin-bottom: 1%;
   float: left;
   text-align: justify;
+  /* vertical-align:middle; */
 }
 /* -------------------------------- img_logo -------------------------------- */
 
@@ -93,6 +94,7 @@
 .slide{
   height: 100%;
   width: 100%;
+  opacity: 0.8;
 }
 
 * {box-sizing: border-box}
